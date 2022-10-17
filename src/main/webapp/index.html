@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gaviem - Controle de Incidentes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./styles/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="pagina">
+            <div class="painel">
+                    <label class="title-panel-" >GaviemReport</label>
+                    <label class="subtitle-panel">Controle de Incidentes</label>
+            </div>
+            <form class="form" name="FormIncidenteCad" method="post" action="./incidenteCadastro.jsp">
+                
+                <table>
+                    <tr>
+                        <td class="subtittle-table">
+                            Código
+                        </td>
+                        <td class="input">
+                            <input type=number name="id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attribute">Cliente</td>
+                        <td class="input"><input type=text name="nome"></td>
+                    </tr>
+                </table>            
+<!--                    <tr>
+                        <td class="attribute">Estado / Cidade</td>
+                        <td class="input">
+                            <input type=text name="estado">
+                            <input type=text name="cidade">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="attribute">Observação Entrega</td>
+                        <td class="input">
+                            <textarea 
+                                style="width: 98%; height: 200px; resize: none;" 
+                                name="observacao" ></textarea>
+                        </td>
+                    </tr>-->
+                    
+<!--                    <tr>
+                        <td>
+                            <input type="submit" name="Salvar" value="Salvar"> 
+                        </td>
+                    </tr>-->
+            </form>
+        </div>
+    </body>
+</html>
