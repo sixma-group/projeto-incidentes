@@ -1,11 +1,13 @@
-.pagina{
+.page{
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.painel{
+.panel{
     color: white;
     background-color: #0099cc;
     width: 90%;
@@ -20,30 +22,58 @@
     align-items: center;
     
 }
-.painel-titulo{
+.title-panel{
     margin-left: 10px;
     font-size: 48px;
     font-weight: bold
 }
-.painel-sub-titulo{
+.subtitle-panel{
     margin-right: 10px;
     font-size: 28px;
 }
 
+.button-index{   
+    color: #fff;
+    background-color: #0099cc;
+    border-radius: 10px;
+    padding: 15px;
+    
+    font-size: 24px;
+}
+
+
 .attribute{
-    background-color: #00bfff;
-    padding-right: 10px;
-    padding: 5px;
+    margin-bottom: 5px;
 }
 .input{
-    padding: 5px;
+    height: 25px;
+    width: 280px;
+    margin-bottom: 15px;
 }
 
-.formulario{
+.table{
     border: 1px solid #000000;
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.duo-tables{
     margin-left: auto;
     margin-right: auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-
+.button-submit{
+    color: #fff;
+    background-color: #42f575;
+    border-radius: 15px;
+    padding: 15px;
+    
+    font-size: 24px;
+}

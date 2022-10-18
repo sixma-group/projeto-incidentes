@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gaviem - Cadastro de Incidentes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../styles/style.css" rel="stylesheet">
+    
+        <script>
+            function alternaEtapa(){
+                document.getElementById("segundaEtapa").style.visibility="visible";
+            }
+        </script>
+    
+    </head>
+    <body>
+        <div class="page">
+            <div class="panel">
+                    <label class="title-panel" >GaviemReport</label>
+                    <label class="subtitle-panel">Cadastro de Incidentes</label>
+            </div>
+            <form name="FormIncidenteEtapaUm" method="post" action="./cadastroIncidente.jsp">
+                <div class="duo-tables">
+                        <div class="table">
+                            <label style="color:#0099cc; font-size:24px; 
+                                text-align: center; margin-bottom: 15px;">
+                                    Cadastro de Incidente
+                            </label>
+                            <label class="attribute">Código</label>        
+                            <input required class="input" 
+                                type=number name="id">
+
+                            <label>Prioridade</label>
+                            <select required class="input" name="prioridade">
+                                <option selected="selected" value="Baixa">Baixa</option>
+                                <option value="Moderada">Moderada</option>
+                                <option value="Alta">Alta</option>
+                                <option value="Crítica">Crítica</option>
+                                <option value="Urgente">Urgente</option>
+                            </select>
+
+                            <label class="attribute">Requisitante</label>        
+                            <input required class="input" 
+                                type=text name="requisitante">
+
+                            <label class="attribute">Departamento</label>        
+                            <input required class="input" 
+                                type=text name="departamento">
+
+                            <label class="attribute">Cargo</label>        
+                            <input required class="input" 
+                                type=text name="cargo">
+
+                            <label class="attribute">E-mail</label>        
+                            <input required class="input" 
+                                type=email name="email">
+
+                            <label class="attribute">Telefone</label>        
+                            <input required class="input" 
+                                type=text name="telefone">
+
+                            <input  class="button-submit" type="button" 
+                                onclick="alternaEtapa()" value="Prosseguir">
+                    </div>
+                    <div class="table" id="segundaEtapa" style="visibility: hidden">
+                        <label style="color:#0099cc; font-size:24px; 
+                            text-align: center; margin-bottom: 15px;">
+                            Descrição do Incidente
+                        </label>
+                        <label class="attribute">Descrição</label>
+                        <textarea  required class="input" style="width: 290px; height: 150px; 
+                            resize: none;" name="descricao"></textarea>
+                        
+                        <label class="attribute">Requisitante</label>        
+                        <input required class="input" 
+                            type=text name="requisitante">
+                        
+                        <label class="attribute">Área de Serviço</label>        
+                        <input required class="input" 
+                           type=text name="areaServico">
+                        
+                        <label class="attribute">Tipo de Serviço</label>        
+                        <input required class="input" 
+                           type=text name="tipoServico">
+                        
+                        <input  class="button-submit" type="submit" 
+                            value="Salvar">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
