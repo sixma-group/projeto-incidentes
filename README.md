@@ -1,4 +1,4 @@
-## [Projeto Incidentes](https://vitor-sb.github.io/ProjetoIncidentes/src/main/webapp/)
+## [Projeto Incidentes](https://sixma-group.github.io/projeto-incidentes//src/main/webapp/)
 Desenvolvido pelo Grupo 06 - 4o Semestre - TADS - UMC 
 
 Git dos Membros do Grupo:<br> 
