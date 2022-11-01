@@ -1,5 +1,5 @@
 ## Projeto Incidentes
-Desenvolvido pelo Grupo 06 - 4o Sementre - TADS - UMC 
+Desenvolvido pelo Grupo 06 - 4o Semestre - TADS - UMC 
 
 Git dos Membros do Grupo:<br> 
 github.com/ThranduilSDR (Emanuel Vitor)<br>
