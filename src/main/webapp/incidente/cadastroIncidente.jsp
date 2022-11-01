@@ -63,16 +63,16 @@
                 </div>
                 <div class="table">
                     <label style="font-size: 24px;">
-                        Descrição 
+                        Descrição: 
                         <text style="width: 290px;"><% out.print(inc.getDescricao()); %></text>
                     </label>
                     <br>
                     <label style="font-size: 20px;">
-                        Área de Serviço <% out.print(inc.getAreaServico()); %>
+                        Área de Serviço: <% out.print(inc.getAreaServico()); %>
                     </label>
                     <br>
                     <label style="font-size: 20px;">
-                        Tipo de Serviço <% out.print(inc.getTipoServico()); %>
+                        Tipo de Serviço: <% out.print(inc.getTipoServico()); %>
                     </label>
                 </div> 
             </div>
