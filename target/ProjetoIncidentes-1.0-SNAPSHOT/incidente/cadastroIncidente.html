@@ -78,23 +78,44 @@
                         <textarea  required class="input" style="width: 290px; height: 150px; 
                             resize: none;" name="descricao"></textarea>
                         
-                        <label class="attribute">Requisitante</label>        
-                        <input required class="input" 
-                            type=text name="requisitante">
+                        <label>Status</label>                        
+                            <select required class="attribute"  name="status" id="status">
+                                <option value="Aguardando Equipe interna">Aguardando Equipe interna</option>
+                                <option value="Pendente Fornecedor">Pendente Fornecedor</option>
+                                <option value="Aguardando validacao">Aguardando validação</option>
+                                <option value="Aguardando Usuário">Aguardando Usuário</option>
+                                <option value="Aguardando FSM">Aguardando FSM</option>
+                                <option value="Resolvido">Resolvido</option>
+                                <option value="Cancelado">Cancelado</option>
+                            </select>
+                        
+                        <label>Ação</label>                        
+                            <select required class="attribute" name="acao" id="acao">
+                                <option value="Aguardando Definicao">Aguardando Definição</option>
+                                <option value="Duvidas / Orientacao">Dúvidas / Orientação</option>
+                                <option value="Erro na Execucao do Programa">Erro na Execução do Programa</option>
+                                <option value="Manutencao">Manutenção</option>
+                                <option value="Solicitacao de Melhorias no Sistema">Solicitação de Melhorias no Sistema</option>
+                            </select>
                         
                         <label class="attribute">Área de Serviço</label>        
-                        <input required class="input" 
+                            <input required class="input" 
                            type=text name="areaServico">
                         
                         <label class="attribute">Tipo de Serviço</label>        
-                        <input required class="input" 
+                            <input required class="input" 
                            type=text name="tipoServico">
                         
-                        <input  class="button-submit" type="submit" 
+                            <input  class="button-submit" type="submit" 
                             value="Salvar">
                     </div>
                 </div>
             </form>
         </div>
+        
+        <footer>      
+                <div class="text-center"> Todos os direitos reservados Grupo 06® - © 2022 - GaviemReport </div>
+        </footer>
+        
     </body>
 </html>
