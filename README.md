@@ -12,5 +12,3 @@ Projeto de prototipo de software para apoio ao processo de Gerenciamento de Inci
 
 Tecnologias usadas para o desenvolvimento:
 HTML, CSS, JSP e Java.
-
-AJKIAJDOSAIDAO
