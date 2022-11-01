@@ -24,55 +24,69 @@
                 String email = request.getParameter("email");
                 String telefone = request.getParameter("telefone");
                 String descricao = request.getParameter("descricao");
+                String status = request.getParameter("status");
+                String acao = request.getParameter("acao");
                 String areaServico = request.getParameter("areaServico");
                 String tipoServico = request.getParameter("tipoServico");
 
                 Incidente inc = new Incidente(id, prioridade, requisitante, departamento, 
-                cargo, email, telefone, descricao, areaServico, tipoServico);
+                cargo, email, telefone, descricao, status, acao, areaServico, tipoServico);
             %>
             
             <div class="duo-tables">
                 <div class="table">
-                    <label style="font-size: 24px;">
-                        <b>Código: <% out.print(inc.getId()); %> </b>
+                    <label style="font-size: 30px;">
+                        <b>Número do Incidente:</b>
                     </label>
+                    <label style="font-size: 60px;">
+                        <b><% out.print(inc.getId()); %> </b>
+                    </label>
+                    
                     <br>
                     <label style="font-size: 20px;">
                         Prioridade: <% out.print(inc.getPrioridade()); %>
                     </label>
                     <br>
                     <label style="font-size: 20px;">
-                        Requisitante <% out.print(inc.getRequisitante()); %>
+                        Requisitante do ticket: <br> <% out.print(inc.getRequisitante()); %>
                     </label>
                     <br>
                     <label style="font-size: 20px;">
-                        Departamento: <% out.print(inc.getDepartamento()); %>
+                        Departamento do Requisitante: <% out.print(inc.getDepartamento()); %>
                     </label>
                     <br>
                     <label style="font-size: 20px;">
-                        Cargo: <% out.print(inc.getCargo()); %>
+                        Cargo do Requisitante: <% out.print(inc.getCargo()); %>
                     </label>
                     <br>
                     <label style="font-size: 20px;">
-                        E-mail: <% out.print(inc.getEmail()); %>
+                        E-mail do Requisitante: <br> <% out.print(inc.getEmail()); %>
                     </label>
                     <br>
                     <label style="font-size: 20px;">
-                        Telefone: <% out.print(inc.getTelefone()); %>
+                        Telefone do Requisitante: <% out.print(inc.getTelefone()); %>
                     </label>
                 </div>
                 <div class="table">
                     <label style="font-size: 24px;">
-                        Descrição: 
+                        Descrição acerca do relato retratado: <br><br>
                         <text style="width: 290px;"><% out.print(inc.getDescricao()); %></text>
                     </label>
-                    <br>
+                    <br><br><br>
                     <label style="font-size: 20px;">
-                        Área de Serviço: <% out.print(inc.getAreaServico()); %>
+                        Status do ticket: <br> <% out.print(inc.getStatus()); %>
                     </label>
                     <br>
                     <label style="font-size: 20px;">
-                        Tipo de Serviço: <% out.print(inc.getTipoServico()); %>
+                        Ação a ser realizada: <br> <% out.print(inc.getAcao()); %>
+                    </label>
+                    <br>
+                    <label style="font-size: 20px;">
+                        Área de Serviço retratado: <% out.print(inc.getAreaServico()); %>
+                    </label>
+                    <br>
+                    <label style="font-size: 20px;">
+                        Tipo de Serviço retratado: <% out.print(inc.getTipoServico()); %>
                     </label>
                 </div> 
             </div>

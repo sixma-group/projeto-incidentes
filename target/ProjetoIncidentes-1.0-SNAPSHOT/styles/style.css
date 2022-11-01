@@ -24,6 +24,22 @@
     align-items: center;
     
 }
+
+.text-center {
+  text-align: center !important;
+    position: absolute;
+    left: 10%;
+    bottom: 2%;
+    
+    color: white;
+    background-color: #0099cc;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
 .title-panel{
     margin-left: 10px;
     font-size: 48px;
@@ -39,28 +55,38 @@
     color: #fff;
     background-color: #0099cc;
     border-radius: 10px;
-    padding: 15px;
-    
+    padding: 15px;    
     font-size: 35pt;
-
+    
+    position: absolute;
+    left: 74%;
+    bottom: 600px;
+   
 }
 
 
+body {
+    background-image: url(https://img.freepik.com/vetores-premium/analise-de-causa-raiz-de-gerenciamento-de-incidentes-ou-solucao-de-problemas-identificar-risco-ou-empresario-de-conceito-de-falha-critica-com-monitor-de-lupa-e-investigar-incidente-com-sinal-de-atencao-de-exclamacao_212586-1820.jpg?w=2000);
+   
+    display: block;
+    width: 99vw;
+    height: 95vh;
+    padding: 0;
+    text-align: center;
+  
 
-
-.img {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    max-height: 100%;
-    background-image: url('https://img.freepik.com/vetores-premium/analise-de-causa-raiz-de-gerenciamento-de-incidentes-ou-solucao-de-problemas-identificar-risco-ou-empresario-de-conceito-de-falha-critica-com-monitor-de-lupa-e-investigar-incidente-com-sinal-de-atencao-de-exclamacao_212586-1820.jpg?w=2000');
-    background-attachment: fixed;
-    background-size: 100%
+    background-position: 100% 65%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
+
+
 
 .attribute{
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;   
     
 }
 
@@ -78,14 +104,17 @@
 
 .table{
     
+    color: white;
+    
+    background-image: linear-gradient(50deg, 	#FF8C00, 	#191970	, #FF8C00 );
+    
     border: 2.5px solid black ;
     display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 20px;
     border-radius: 2.25em 2.25em;
-    background-color: rgba(138, 138, 138, 0.02);
-    
+    background-color: rgba(138, 138, 138, 0.02);        
     
     
     
@@ -98,18 +127,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
+    position: absolute;
+    left: 10%;
+    bottom: 300px;
+    
+    justify-content: space-between;
+    width: 81%;
 }
 
 .button-submit{
-  padding: 19px 39px 18px 39px;
+    padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #42f575;
+  background-color: #089630;
   font-size: 24px;
   border-radius: 10px;
- 
-   box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.3);
+  border-width: 1px 4px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
-  
     
     
     

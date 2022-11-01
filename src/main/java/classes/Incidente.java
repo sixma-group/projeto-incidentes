@@ -10,13 +10,15 @@ public class Incidente {
     private String email;
     private String telefone;
     private String descricao;
+    private String status;
+    private String acao;
     private String areaServico;
     private String tipoServico;
     
     
     public Incidente(int id, String prioridade, String requisitante, String departamento, 
             String cargo, String email, String telefone, String descricao,
-            String areaServico, String tipoServico){
+            String status, String acao, String areaServico, String tipoServico){
             this.id = id;
             this.prioridade = prioridade;
             this.requisitante = requisitante;
@@ -25,6 +27,8 @@ public class Incidente {
             this.email = email;
             this.telefone = telefone;
             this.descricao = descricao;
+            this.status = status;
+            this.acao = acao;
             this.areaServico = areaServico;
             this.tipoServico = tipoServico;
     }
@@ -96,7 +100,23 @@ public class Incidente {
     public void setDescricao(String descricao){
         this.descricao = descricao;
     }
-    
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getAcao() {
+        return acao;
+    }
+
+    public void setAcao(String acao) {
+        this.acao = acao;
+    }    
+        
     public String getAreaServico(){
         return this.areaServico;
     }
